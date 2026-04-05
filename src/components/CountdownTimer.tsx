@@ -17,14 +17,14 @@ const CountdownTimer = () => {
       const now = new Date();
       const currentYear = now.getFullYear();
       
-      let birthdayDate = new Date(currentYear, 1, 9);
+      let birthdayDate = new Date(currentYear, 9, 1);
       
       if (now > birthdayDate) {
-        birthdayDate = new Date(currentYear + 1, 1, 9);
+        birthdayDate = new Date(currentYear + 1, 9, 1);
       }
 
       const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-      const birthdayThisYear = new Date(currentYear, 1, 9);
+      const birthdayThisYear = new Date(currentYear, 9, 1);
       
       if (today.getTime() === birthdayThisYear.getTime()) {
         setIsBirthday(true);

@@ -16,7 +16,7 @@ const Index = () => {
   const [hasEntered, setHasEntered] = useState(false);
 
   return (
-    <div className="min-h-screen bg-background overflow-x-hidden">
+    <div className="min-h-screen bg-background overflow-x-hidden scroll-smooth">
       {!hasEntered && <WelcomeOverlay onEnter={() => setHasEntered(true)} />}
       
       <div className={`transition-opacity duration-700 ${hasEntered ? 'opacity-100' : 'opacity-0'}`}>

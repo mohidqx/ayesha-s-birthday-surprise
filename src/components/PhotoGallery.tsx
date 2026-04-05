@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Heart, Camera, ImagePlus, Upload, X, Loader2, GripVertical } from "lucide-react";
+import { Heart, Camera, Upload, X, Loader2, GripVertical } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import {
@@ -334,11 +334,27 @@ const PhotoGallery = () => {
                 </button>
               </div>
             ) : (
-              <label className="block mb-4 cursor-pointer">
-                <div className="border-2 border-dashed border-primary/30 hover:border-primary/60 rounded-xl p-8 text-center transition-colors">
-                  <ImagePlus className="w-12 h-12 mx-auto text-primary/50 mb-3" />
-                  <p className="font-body text-sm text-muted-foreground">
-                    Click to select a photo
+              <label className="block mb-4 cursor-pointer group/upload">
+                <div
+                  className="border-2 border-dashed border-primary/30 hover:border-primary/60 rounded-xl p-8 text-center transition-all duration-300 hover:bg-primary/5 hover:scale-[1.01]"
+                  onDragOver={(e) => { e.preventDefault(); e.currentTarget.classList.add('border-primary', 'bg-primary/10', 'scale-[1.02]'); }}
+                  onDragLeave={(e) => { e.currentTarget.classList.remove('border-primary', 'bg-primary/10', 'scale-[1.02]'); }}
+                  onDrop={(e) => {
+                    e.preventDefault();
+                    e.currentTarget.classList.remove('border-primary', 'bg-primary/10', 'scale-[1.02]');
+                    const file = e.dataTransfer.files?.[0];
+                    if (file && file.type.startsWith('image/')) {
+                      setSelectedFile(file);
+                      setPreviewUrl(URL.createObjectURL(file));
+                    }
+                  }}
+                >
+                  <Upload className="w-12 h-12 mx-auto text-primary/50 mb-3 group-hover/upload:text-primary transition-colors" />
+                  <p className="font-body text-sm text-muted-foreground font-medium">
+                    Click or drag & drop a photo
+                  </p>
+                  <p className="font-body text-xs text-muted-foreground/60 mt-1">
+                    JPG, PNG, WEBP supported
                   </p>
                 </div>
                 <input
