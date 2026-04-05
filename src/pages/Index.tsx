@@ -11,6 +11,7 @@ import SurpriseButton from "@/components/SurpriseButton";
 import PhotoGallery from "@/components/PhotoGallery";
 import Footer from "@/components/Footer";
 import WelcomeOverlay from "@/components/WelcomeOverlay";
+import MemoryTimeline from "@/components/MemoryTimeline";
 
 const Index = () => {
   const [hasEntered, setHasEntered] = useState(false);
@@ -24,6 +25,7 @@ const Index = () => {
         <CursorHearts />
         <FloatingHearts />
         <HeroSection />
+        <MemoryTimeline />
         <LoveLetter />
         <LovePoem />
         <ReasonsSection />
