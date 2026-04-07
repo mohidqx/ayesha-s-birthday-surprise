@@ -13,63 +13,63 @@ const milestones: Milestone[] = [
     date: "April 13, 2022",
     title: "The Day I Fell in Love",
     description:
-      "Something changed in my heart that day. I looked at you and knew — you were the one I'd been waiting for. I liked you since this day, and my feelings only grew stronger.",
+      "Something changed in my heart that day in Sukkur. I looked at you and knew — you were the one I'd been waiting for. Even though 55 kilometers separated us — me in Sukkur, you in Garhi Yasin — my heart crossed that distance in an instant. I liked you since this day, and my feelings only grew stronger.",
     icon: "heart",
   },
   {
     date: "May 2022",
     title: "Our First Date",
     description:
-      "Nervous hearts, shy smiles, and a connection that felt like it was written in the stars. That first date was the beginning of everything beautiful.",
+      "Nervous hearts, shy smiles, and a connection that felt like it was written in the stars. The 55 km between Sukkur and Garhi Yasin felt like nothing when I was with you. That first date was the beginning of everything beautiful.",
     icon: "star",
   },
   {
     date: "October 1, 2022",
     title: "Her First Birthday Together",
     description:
-      "The first time I got to celebrate your special day. Every moment spent making you smile was worth more than anything in the world.",
+      "The first time I got to celebrate your special day. No distance could stop me from making your birthday magical. Every moment spent making you smile was worth more than anything in the world.",
     icon: "sparkles",
   },
   {
     date: "February 14, 2023",
     title: "First Valentine's Day",
     description:
-      "Our first Valentine's — a day dedicated to love, but every day with you already felt like Valentine's Day.",
+      "Our first Valentine's — a day dedicated to love, but every day with you already felt like Valentine's Day. From Sukkur to Garhi Yasin, love knows no distance.",
     icon: "heart",
   },
   {
     date: "April 13, 2023",
     title: "One Year of Loving You",
     description:
-      "365 days of carrying you in my heart. A whole year of loving you silently, deeply, and unconditionally.",
+      "365 days of carrying you in my heart. A whole year of loving you silently, deeply, and unconditionally. Through every kilometer between Sukkur, Sindh and Garhi Yasin, Distt. Shikarpur — my love never wavered.",
     icon: "star",
   },
   {
     date: "October 1, 2023",
     title: "First Gift for Her",
     description:
-      "Choosing the perfect gift for you — something that could capture even a fraction of what you mean to me. Your smile when you received it made everything worth it.",
+      "Choosing the perfect gift for you — something that could capture even a fraction of what you mean to me. Your smile when you received it made every effort, every plan, and every journey worth it.",
     icon: "sparkles",
   },
   {
     date: "June 18, 2025",
     title: "Our First Kiss",
     description:
-      "A stolen moment, a secret kiss — my heart was racing but it felt so right. I kissed you secretly, and in that moment, the whole world disappeared.",
+      "A stolen moment, a secret kiss — my heart was racing but it felt so right. I kissed you secretly, and in that moment, the whole world disappeared. Just you and me, nothing else mattered.",
     icon: "heart",
   },
   {
     date: "June 26, 2025",
     title: "She Confessed Her Love",
     description:
-      "The most magical day — Hasina confessed her feelings for me, and I told her everything too. After loving her since April 13, 2022, hearing those words was the most beautiful reward my heart could ever receive.",
+      "The most magical day of my life — Hasina confessed her feelings for me, and I told her everything too. After loving her since April 13, 2022 — over three years of silent devotion — hearing those words was the most beautiful reward my heart could ever receive. The 55 km between us finally felt like nothing.",
     icon: "heart",
   },
   {
     date: "June 26, 2025",
     title: "Our Real First Kiss",
     description:
-      "This time, with her permission, with her love, with her heart saying yes — I kissed her. A kiss that sealed our love story forever. 💕",
+      "This time, with her permission, with her love, with her heart saying yes — I kissed her. A kiss that sealed our love story forever. Two hearts from two cities in Sindh, united by love. 💕",
     icon: "sparkles",
   },
 ];
