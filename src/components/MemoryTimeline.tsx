@@ -13,7 +13,7 @@ const milestones: Milestone[] = [
     date: "April 13, 2022",
     title: "The Day I Fell in Love",
     description:
-      "Something changed in my heart that day. I looked at you and knew — you were the one I'd been waiting for. My world became more colorful, more beautiful, because of you.",
+      "Something changed in my heart that day. I looked at you and knew — you were the one I'd been waiting for. I liked you since this day, and my feelings only grew stronger.",
     icon: "heart",
   },
   {
@@ -52,14 +52,27 @@ const milestones: Milestone[] = [
     icon: "sparkles",
   },
   {
-    date: "June 26, 2025",
-    title: "The Day She Fell in Love",
+    date: "June 18, 2025",
+    title: "Our First Kiss",
     description:
-      "The most magical day — when you finally felt the same. My heart had waited patiently, and that day, it was rewarded with the most beautiful gift: your love.",
+      "A stolen moment, a secret kiss — my heart was racing but it felt so right. I kissed you secretly, and in that moment, the whole world disappeared.",
     icon: "heart",
   },
+  {
+    date: "June 26, 2025",
+    title: "She Confessed Her Love",
+    description:
+      "The most magical day — Hasina confessed her feelings for me, and I told her everything too. After loving her since April 13, 2022, hearing those words was the most beautiful reward my heart could ever receive.",
+    icon: "heart",
+  },
+  {
+    date: "June 26, 2025",
+    title: "Our Real First Kiss",
+    description:
+      "This time, with her permission, with her love, with her heart saying yes — I kissed her. A kiss that sealed our love story forever. 💕",
+    icon: "sparkles",
+  },
 ];
-
 const iconMap = {
   heart: Heart,
   sparkles: Sparkles,
