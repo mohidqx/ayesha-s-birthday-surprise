@@ -12,6 +12,7 @@ import PhotoGallery from "@/components/PhotoGallery";
 import Footer from "@/components/Footer";
 import WelcomeOverlay from "@/components/WelcomeOverlay";
 import MemoryTimeline from "@/components/MemoryTimeline";
+import DistanceBetweenUs from "@/components/DistanceBetweenUs";
 
 const Index = () => {
   const [hasEntered, setHasEntered] = useState(false);
@@ -26,6 +27,7 @@ const Index = () => {
         <FloatingHearts />
         <HeroSection />
         <MemoryTimeline />
+        <DistanceBetweenUs />
         <LoveLetter />
         <LovePoem />
         <ReasonsSection />
