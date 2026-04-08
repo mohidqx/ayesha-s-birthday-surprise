@@ -11,29 +11,36 @@ const WelcomeOverlay = ({ onEnter }: WelcomeOverlayProps) => {
   const [musicReady, setMusicReady] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Calm romantic piano music
+  // Happy Birthday piano music - served from public folder
   useEffect(() => {
-    // Soft, gentle romantic piano - royalty free
-    const pianoMusicUrl = "https://cdn.pixabay.com/audio/2022/10/18/audio_2fb02c4b28.mp3";
+    const musicUrl = "/happy-birthday.mp3";
     
-    audioRef.current = new Audio(pianoMusicUrl);
+    audioRef.current = new Audio(musicUrl);
     audioRef.current.loop = true;
-    audioRef.current.volume = 0.35;
+    audioRef.current.volume = 0.4;
     audioRef.current.preload = "auto";
     
     audioRef.current.addEventListener("canplaythrough", () => {
       setMusicReady(true);
-      console.log("Calm piano music ready to play!");
+      console.log("Happy Birthday music ready to play!");
     });
 
     audioRef.current.addEventListener("error", (e) => {
       console.error("Audio loading error:", e);
-      // Fallback - another calm piano track
-      audioRef.current = new Audio("https://cdn.pixabay.com/audio/2023/09/04/audio_9efe4a08d6.mp3");
-      audioRef.current.loop = true;
-      audioRef.current.volume = 0.3;
+      // Fallback - try orangefreesounds direct
+      const fallback = new Audio("https://orangefreesounds.com/wp-content/uploads/2018/11/Happy-birthday-piano-music.mp3");
+      fallback.loop = true;
+      fallback.volume = 0.4;
+      audioRef.current = fallback;
       setMusicReady(true);
     });
+
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
   }, []);
 
   const handleEnter = async () => {
@@ -144,7 +151,7 @@ const WelcomeOverlay = ({ onEnter }: WelcomeOverlayProps) => {
           <div className="flex items-center justify-center gap-2 text-muted-foreground mb-10 animate-fade-in-up animation-delay-500">
             <Music className="w-4 h-4" />
             <span className="font-body text-sm tracking-wide">
-              {musicReady ? "Romantic piano music ready ♪" : "Preparing romantic music..."}
+              {musicReady ? "Happy Birthday music ready 🎂♪" : "Preparing birthday music..."}
             </span>
             {!musicReady && <Loader2 className="w-4 h-4 animate-spin" />}
           </div>
